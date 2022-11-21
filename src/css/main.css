@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(6, 6, 6, 0.079), rgba(0, 0, 0, 0.858)), url(https://images5.alphacoders.com/106/1064914.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
+}
+
+.fade {
+    animation: callMenu 0.1s ease-in;
+    overflow: hidden;
+}
+
+.navbar-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.navbar-image img {
+    width: 150px;
+    filter: brightness(0) invert(1);
+    margin-left: 5vw;
+}
+
+.navbar-hamburguer {
+    cursor: pointer;
+}
+
+.navbar-hamburguer img {
+    width: 50px;
+    filter: invert(1);
+    margin-top: 50px;
+    margin-right: 3vw;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+.hero {
+    display: flex;
+    width: 40vw;
+    margin-left: 30vw;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    width: 91%;
+    font-weight: 700;
+}
+
+.title-hero span {
+    border: 2px solid rgba(225, 255, 0, 0.675);
+    padding: 5px 10px;
+}
+
+.img-hero img {
+    width: 90%;
+    filter: invert(1);
+    margin-bottom: -5vw;
+}
+
+.text-hero p {
+    color: rgb(208, 208, 208);
+    width: 92%;
+    text-align: start;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vw;
+    gap: 20px;
+    justify-content: start;
+
+
+}
+
+.container-buttons button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.watch button {
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.trailer button {
+    border-left: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hamburguer-navbar {
+    display: flex;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    overflow: hidden;
+
+}
+
+
+
+.close-button button {
+    background-color: transparent;
+    border: none;
+}
+
+.close-button button:active {
+    animation: movimentaciones 0.1s ease-in-out;
+}
+
+.close-button img {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 40px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+
+}
+
+.hamburguer-navbar ul {
+    display: flex;
+    margin-top: 30vh;
+    flex-direction: column;
+    text-align: start;
+    list-style: none;
+}
+
+.hamburguer-navbar li {
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+@keyframes movimentaciones {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes callMenu {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .hero {
+        margin-left: -15vw;
+        width: 70%;
+    }
+}
