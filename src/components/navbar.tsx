@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <nav className='hamburguer-navbar'>
+            <nav className='hamburguer-navbar hide'>
                 <div className="hamburguer-container">
                     <div className="close-button" onClick={hamburguerActions.hide}>
                         <button><img src={close} alt="" /></button>
